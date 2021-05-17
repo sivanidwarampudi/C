@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+	
+    char s[100];
+    scanf("%[^\n]%*c",&s);
+    printf("Hello, World!\n%s",s);  
+    return 0;
+}
+/*%[^\n] will be used to not to ignore new line character and %*c scans the character and ignores it as in first new line string will be considered then after new strings gets 
+discarded.It means to ignore the next character such as a space, /, or a - that is common in written dates.*/
+
