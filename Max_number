@@ -1,0 +1,21 @@
+int maximum(int a,int b);
+main()
+{
+	int n1,n2,res;
+	printf("Enter two numbers:\n");
+	scanf("%d%d",&n1,&n2);
+	res=maximum(n1,n2);
+	printf("%d is a maximum number\n",res);	
+}
+int maximum(int a,int b)
+{
+	if(a>b)
+		return a;
+	else
+		return b;		
+}
+/*Variables that are declared inside a function or block are called local variables. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own.
+Global variables are defined outside a function, usually on top of the program. Global variables hold their values throughout the lifetime of your program and they can be accessed inside any of the functions defined for the program.
+
+A global variable can be accessed by any function. That is, a global variable is available for use throughout your entire program after its declaration.
+Here x and y are local variables*/
