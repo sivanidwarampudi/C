@@ -1,19 +1,19 @@
-int maximum(int a,int b);
-main()
+#include <stdio.h>
+int maximum(int a,int b,int c,int d);
+int main()
 {
-	int n1,n2,res;
-	printf("Enter two numbers:\n");
-	scanf("%d%d",&n1,&n2);
-	res=maximum(n1,n2);
-	printf("%d is a maximum number\n",res);	
+    int a,b,c,d,res;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    res=maximum(a,b,c,d);
+    printf("%d",res);    
 }
-int maximum(int a,int b)
+int maximum(int a,int b,int c, int d)
 {
-	if(a>b)
-		return a;
-	else
-		return b;		
+    int x,y;
+    return (x=a>b?a:b)>(y=c>d?c:d)?x:y;
+          
 }
+
 /*Variables that are declared inside a function or block are called local variables. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own.
 Global variables are defined outside a function, usually on top of the program. Global variables hold their values throughout the lifetime of your program and they can be accessed inside any of the functions defined for the program.
 
